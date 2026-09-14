@@ -1,12 +1,12 @@
 import static java.lang.System.getenv
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.4.10'
+    id 'org.jetbrains.kotlin.jvm' version '2.4.20'
     id 'application'
     id 'com.google.cloud.tools.jib' version '3.5.4'
     id 'org.springframework.boot' version '4.1.1'
     id 'io.spring.dependency-management' version '1.1.7'
-    id "org.jetbrains.kotlin.plugin.spring" version '2.4.10'
+    id "org.jetbrains.kotlin.plugin.spring" version '2.4.20'
 }
 
 group = 'dpozinen'
@@ -50,7 +50,7 @@ dependencies {
     // Spring Cloud dependencies (version managed by Spring Cloud BOM)
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
-    runtimeOnly 'org.jetbrains.kotlin:kotlin-reflect:2.4.10'
+    runtimeOnly 'org.jetbrains.kotlin:kotlin-reflect:2.4.20'
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 
     // Test dependencies (versions managed by Spring Boot BOM where applicable)
